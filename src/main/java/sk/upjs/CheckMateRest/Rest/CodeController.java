@@ -3,8 +3,10 @@ package sk.upjs.CheckMateRest.Rest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 import sk.upjs.CheckMateRest.storage.dao.CodeDAO;
 
+@RestController
 public class CodeController {
 
     private final CodeDAO codeDAO;

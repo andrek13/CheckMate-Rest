@@ -1,14 +1,12 @@
 package sk.upjs.CheckMateRest.Rest;
 
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import sk.upjs.CheckMateRest.storage.dao.UhsDao;
 import sk.upjs.CheckMateRest.storage.triedy.Uhs;
 
 import java.util.List;
 
+@RestController
 public class UhsController {
 
     private final UhsDao uhsDao;
